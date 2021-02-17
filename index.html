@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Eunice Chan</title>
+
+	<style type="text/css">
+		
+		body{
+			background-color: ghostwhite;
+		}
+
+		a{
+			color: #9DC209;
+		}
+
+		.background{
+			font-family: Helvetica; 
+			font-size: 800px;
+			color: white;
+			line-height: 500px;
+			position: fixed;
+			top: -10%;
+			z-index: 0;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.weeks{
+			width: 40%;
+			padding: 2.5%;
+			margin: 2.5%;
+			font-family: Helvetica; 
+			font-size: 18px;
+			color: #9DC209;
+			overflow: auto;
+			z-index: 1;
+		}
+
+		.pop{
+			font-size: 24px;
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="background">
+		e<br>c
+	</div>
+
+	<div class="container">
+		
+		<div class="weeks one">
+			1<br><br>hi everyone! my name is eunice. &#9786; i grew up in hong kong and am currently in manhattan. i am a third-year communication design major and film production minor. i haven taken creative computing and core interaction in my sophomore year and have done several personal projects with code. i hope to further explore code as an art-making medium in this class and am looking forward to learning with you all!<br><br>an interesting link: <a href="http://azusakobayashi.com/standard_state/">http://azusakobayashi.com/standard_state/</a>
+		</div>
+		<div class="weeks two">
+			2<br><br>letter to young artists during a global pandemic by paul chan<br><br>i have always associated art with the notion of "nowness". ever since the lockdown began, i have struggled to find meaning in my work, especially where and how they fit into the current state of the world. i find chan's analysis very intriguing, particularly about returning our focus on the creative process, rather than the product itself.
+		</div>
+		<div class="weeks three">
+			3<br><br>the cob web: can this internet be archived? by jill lepore<br><br>there has been a lot of discussion revolving around the safety concerns of political expression on social media. some are worried about talking about sensitive topics online, thinking that it would leave a permanent record that would have a negative effect in the long run. i didn't know much about the physicality and short lifespan of the web before reading this article. it is interesting to me how we can sometimes lose access to what we had published, while a third-party archive can have ownership to it.
+		</div>
+		<div class="weeks four">
+			4<br><br>the internet didn’t kill counterculture — you just won’t find it on instagram by caroline busta<br><br>our generation of artists relies heavily on social media, particularly instagram, to publish our work. although the accessibility may mean that it's made easier to get your name out there, success on social media often depends on adherence to certain algorithms. creativity is hence reduced to practicality, which involves calculations that could overpower the indefinite possibilities offered by artistic expression.<br><br>i think that returning to designing our own websites would be a good way to breakthrough the current limitations of social media. it would, however, require a group, as busta wrote, to turn that into the norm. afterall, we are all accustomed to the convenience of using just a few major platforms for everything.
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		
+		$('.one').on('mouseenter', function(){
+        	$('.one').addClass('pop');
+        	$('a').addClass('pop');
+    	});
+
+    	$('.one').on('mouseleave', function(){
+        	$('.one').removeClass('pop');
+        	$('a').removeClass('pop');
+    	});
+
+    	$('.two').on('mouseenter', function(){
+        	$('.two').addClass('pop');
+    	});
+
+    	$('.two').on('mouseleave', function(){
+        	$('.two').removeClass('pop');
+    	});
+
+    	$('.three').on('mouseenter', function(){
+        	$('.three').addClass('pop');
+    	});
+
+    	$('.three').on('mouseleave', function(){
+        	$('.three').removeClass('pop');
+    	});
+
+    	$('.four').on('mouseenter', function(){
+        	$('.four').addClass('pop');
+    	});
+
+    	$('.four').on('mouseleave', function(){
+        	$('.four').removeClass('pop');
+    	});
+
+	</script>
+
+</body>
+</html>
